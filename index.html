@@ -5,18 +5,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-  <!-- JetBrains Mono font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
     rel="stylesheet">
-
   <title>Password Generator</title>
-
   <style>
-    /* Apply JetBrains Mono globally */
     body {
       font-family: "JetBrains Mono", monospace;
     }
@@ -25,23 +20,18 @@
 
 <body class="h-screen flex items-center justify-center bg-[#18171F] text-white">
   <main class=" max-w-lg space-y-6">
-    <!-- Title -->
     <h1 class="text-[#817D92] text-center text-2xl font-bold ">
       Password Generator
     </h1>
-
-    <!-- Password Display -->
     <div class="flex justify-between items-center bg-[#24232C] px-8 py-5">
       <input
         type="text"
         value="PTx1f5DaFX"
         readonly
-        class="bg-transparent text-[#E6E5EA] text-3xl font-bold outline-none w-full"
-      />
+        class="bg-transparent text-[#E6E5EA] text-3xl font-bold outline-none w-full"/>
         <image src="./images/fa-regular_copy.png">
     </div>
 
-    <!-- Settings Section -->
     <div class="bg-[#24232C] p-8 space-y-6">
       <div class="flex justify-between items-center">
         <h2 class="text-lg text-[#E6E5EA]">
@@ -49,15 +39,7 @@
         </h2>
         <span id="charLength" class="text-[#A4FFAF] text-3xl font-bold">10</span>
       </div>
-
-      <input
-        id="range"
-        type="range"
-        min="0"
-        max="20"
-        step="10"
-        class="w-full accent-[#A4FFAF] cursor-pointer"
-      />
+      <input id="range" type="range" min="0" max="20" step="10" class="w-full accent-[#A4FFAF] cursor-pointer"/>
 
 <div class="space-y-3 ">
   <label class="flex items-center p-1 gap-3">
@@ -77,21 +59,15 @@
     <span class="text-lg">Include Symbols</span>
   </label>
 </div>
-
-
-      <!-- Added more spacing before button -->
+  
       <div class="pt-4">
-        <button
-          id="generate"
-          type="button"
-          class="w-full bg-[#A4FFAF] text-[#24232C] font-bold py-5 cursor-pointer uppercase text-lg"
-        >
+        <button id="generate" type="button" class="w-full bg-[#A4FFAF] text-[#24232C] font-bold py-5 cursor-pointer uppercase text-lg">
           Generate →
         </button>
       </div>
     </div>
   </main>
-
   <script src="index.js"></script>
 </body>
 </html>
+
